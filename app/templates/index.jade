@@ -1,0 +1,85 @@
+//
+   Created by Denis on 19.05.2016.
+doctype html
+html
+  head
+    meta(charset='utf-8')
+
+    title Портфолио Корнея
+    meta(name='description', content='')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    link(rel='stylesheet', href='app/css/style.css')
+
+  body
+    header
+      .logo
+        a.logo__link
+          img.logo__img
+      nav.menu
+        ul
+          li.menu__item
+            a.menu__item-link Обо мне
+          li.menu__item
+            a.menu__item-link Мои работы
+          li.menu__item
+            a.menu__item-link Связаться со мной
+
+    main
+      section.info
+        h2.info__title Основная информация
+        div.info__photo
+          img.info__photo-img
+        p.info__description
+          span.info__description-bold Меня зовут:
+          |  Корниенко Денис Витальевич
+        p.info__description
+          span.info__description-bold Мой возраст:
+          |  25 лет
+        p.info__description
+          span.info__description-bold Мой город:
+          |  Геленджик
+        p.info__description
+          span.info__description-bold Моя специализация:
+          |  FRONTEND разработчик
+        p.info__description
+          span.info__description-bold Ключевые навыки:
+          ul.skills
+            li.skill__item html
+            li.skill__item css
+            li.skill__item git
+            li.skill__item gulp
+            li.skill__item javascript
+
+      section.experience
+        h2.experience__title Опыт работы
+        p.experience__description
+          span.experience__description-bold ООО "Фирма "Славтранс" Главный бухгалтер
+          |  Апрель 2015 по настоящее время
+        p.experience__description
+          span.experience__description-bold ООО "Фирма "Славтранс" Заместитель главного бухгалтера
+          |  Декабрь 2010 - Апрель 2015
+
+      section.education
+        h2.education__title Образование
+        p.education__description
+          span.education__description-bold Томский Государственный Архитектурно-строительный университет
+          |  Сентябрь 2000 - Октябрь 2005
+        p.education__description
+          span.education__description-bold HTML-academy Базовый и Продвинутый интенсивы
+          |  Февраль 2016 - Май 2016
+
+      section.contacts
+        ul.contacts__list
+          li.contacts__item
+            a(class="contacts__mail", href="mailto:korney197823@gmail.com") korney197823@gmail.com
+          li.contacts__item
+            a(class="contacts__phone", href="tel:+78125556666") +79883337098
+          li.contacts__item
+            a(class="contacts__skype", href="skype:korney1978?chat") korney197823
+
+      section.social
+        a.social__link.social__link--vk(href="https://vk.com/id29755814") VK
+        a.social__link.social__link--twitter(href="https://vk.com/id29755814") Twitter
+        a.social__link.social__link--facebook(href="https://www.facebook.com/kornienko.den") Facebook
+        a.social__link.social__link--github(href="https://github.com/korney197823") GitHub
