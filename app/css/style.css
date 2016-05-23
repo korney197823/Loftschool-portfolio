@@ -1,0 +1,166 @@
+.education {
+  margin-top: 15px;
+  background-color: #eff3f7; }
+
+.education__description {
+  text-align: center;
+  font-size: 15px;
+  font-family: FiraSansLight, sans-serif; }
+  .education__description-bold {
+    display: block;
+    font-family: FiraSansBook, sans-serif;
+    font-size: 17px; }
+
+.experience {
+  margin-top: 15px;
+  background-color: #eff3f7; }
+
+.experience__description {
+  text-align: center;
+  font-size: 15px;
+  font-family: FiraSansLight, sans-serif; }
+  .experience__description-bold {
+    display: block;
+    font-family: FiraSansBook, sans-serif;
+    font-size: 17px; }
+
+@font-face {
+  font-family: "FiraSansBook";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/fira/firasans-book.eot?#iefix") format("embedded-opentype"), url("../fonts/fira/firasans-book.woff2") format("woff2"), url("../fonts/fira/firasans-book.woff") format("woff"); }
+
+@font-face {
+  font-family: "FiraSansRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/fira/firasans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/fira/firasans-regular.woff2") format("woff2"), url("../fonts/fira/firasans-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "FiraSansMedium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/fira/firasans-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/fira/firasans-medium.woff2") format("woff2"), url("../fonts/fira/firasans-medium.woff") format("woff"); }
+
+@font-face {
+  font-family: "FiraSansLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/fira/firasans-light.eot?#iefix") format("embedded-opentype"), url("../fonts/fira/firasans-light.woff2") format("woff2"), url("../fonts/fira/firasans-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "ProximaNovaCond";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Proxima-Nova/ProximaNovaCond-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima-Nova/ProximaNovaCond-Semibold.woff2") format("woff2"), url("../fonts/Proxima-Nova/ProximaNovaCond-Semibold.woff") format("woff"); }
+
+.header {
+  padding: 15px;
+  background-color: #eff3f7; }
+
+.logo {
+  width: 170px;
+  float: left; }
+
+.info {
+  margin-top: 15px;
+  background-color: #eff3f7; }
+
+.info__photo {
+  width: 130px;
+  margin: 0 auto; }
+
+.info__photo-img {
+  border-radius: 50%;
+  border: 2px solid #2fa5bc; }
+
+.info__description {
+  font-size: 19px;
+  text-align: center; }
+  .info__description-bold {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-family: FiraSansMedium, sans-serif; }
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 105px; }
+
+.skill__item {
+  margin-right: 10px;
+  margin-top: 10px;
+  display: inline-block;
+  padding: 2px 7px;
+  font-family: ProximaNovaCond, sans-serif;
+  color: #ffffff;
+  background-image: linear-gradient(to top, #2e8ca2 0%, #2e8ca2 52%, #3ba8c0 53%, #3ba8c0 100%);
+  border-radius: 2px; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+body {
+  width: 320px;
+  margin: 0 auto;
+  font-family: FiraSansRegular, sans-serif;
+  color: #5a636b;
+  background-image: url(../img/comppattern2.png); }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.container {
+  padding: 15px; }
+
+h2 {
+  margin-top: 0;
+  text-align: center;
+  font-family: FiraSansBook, sans-serif;
+  font-size: 24px;
+  color: #3ba8c0; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.menu__item {
+  text-align: center;
+  margin-left: -15px;
+  margin-right: -15px; }
+  .menu__item:not(:first-of-type) {
+    border-top: 1px solid #8196ac; }
+
+.menu__item-link {
+  text-align: center;
+  font-size: 24px;
+  color: #8196ac; }
+
+.menu ul {
+  display: none; }
+
+.menu {
+  width: 25px;
+  height: 25px;
+  float: right;
+  background-image: url(../img/burger.png);
+  background-repeat: no-repeat; }

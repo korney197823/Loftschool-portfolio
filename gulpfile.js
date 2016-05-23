@@ -13,7 +13,11 @@ var jade = require('gulp-jade');
 gulp.task("style", function() {
   gulp.src("app/sass/style.sass")
     .pipe(plumber())
-    .pipe(sass())
+    .pipe(sass(
+      {
+        includePaths: require('node-bourbon').includePaths
+      }
+    ))
     .pipe(postcss([
       autoprefixer({browsers: [
         "last 1 version",

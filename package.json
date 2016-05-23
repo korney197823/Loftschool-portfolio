@@ -9,12 +9,16 @@
     "gulp-jade": "^1.1.0",
     "gulp-plumber": "1.1.0",
     "gulp-postcss": "6.1.0",
-    "gulp-sass": "2.2.0"
+    "gulp-sass": "2.2.0",
+    "node-bourbon": "^4.2.8"
   },
   "scripts": {
     "start": "gulp serve"
   },
   "engines": {
     "node": "^5.0.0"
+  },
+  "dependencies": {
+    "bourbon": "^4.2.7"
   }
 }

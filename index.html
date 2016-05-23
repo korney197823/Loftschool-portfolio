@@ -8,23 +8,26 @@
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="app/css/normalize.css">
     <link rel="stylesheet" href="app/css/style.css">
   </head>
   <body>
-    <header>
-      <div class="logo"><a class="logo__link"><img class="logo__img"></a></div>
-      <nav class="menu">
-        <ul>
-          <li class="menu__item"><a class="menu__item-link">Обо мне</a></li>
-          <li class="menu__item"><a class="menu__item-link">Мои работы</a></li>
-          <li class="menu__item"><a class="menu__item-link">Связаться со мной</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="header__wrap clearfix">
+        <div class="logo"><a href="#" class="logo__link"><img src="app/img/logo.png" class="logo__img"></a></div>
+        <nav class="menu">
+          <ul>
+            <li class="menu__item"><a href="#" class="menu__item-link active">Обо мне</a></li>
+            <li class="menu__item"><a href="#" class="menu__item-link">Мои работы</a></li>
+            <li class="menu__item"><a href="#" class="menu__item-link">Связаться со мной</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <section class="info">
+      <section class="info container">
         <h2 class="info__title">Основная информация</h2>
-        <div class="info__photo"><img class="info__photo-img"></div>
+        <div class="info__photo"><img src="app/img/avatar.jpg" alt="avatar" width="130px" height="130px" class="info__photo-img"></div>
         <p class="info__description"><span class="info__description-bold">Меня зовут:</span> Корниенко Денис Витальевич</p>
         <p class="info__description"><span class="info__description-bold">Мой возраст:</span> 25 лет</p>
         <p class="info__description"><span class="info__description-bold">Мой город:</span> Геленджик</p>
@@ -39,12 +42,12 @@
           </ul>
         </p>
       </section>
-      <section class="experience">
+      <section class="experience container">
         <h2 class="experience__title">Опыт работы</h2>
         <p class="experience__description"><span class="experience__description-bold">ООО "Фирма "Славтранс" Главный бухгалтер</span> Апрель 2015 по настоящее время</p>
         <p class="experience__description"><span class="experience__description-bold">ООО "Фирма "Славтранс" Заместитель главного бухгалтера</span> Декабрь 2010 - Апрель 2015</p>
       </section>
-      <section class="education">
+      <section class="education container">
         <h2 class="education__title">Образование</h2>
         <p class="education__description"><span class="education__description-bold">Томский Государственный Архитектурно-строительный университет</span> Сентябрь 2000 - Октябрь 2005</p>
         <p class="education__description"><span class="education__description-bold">HTML-academy Базовый и Продвинутый интенсивы</span> Февраль 2016 - Май 2016</p>
@@ -58,5 +61,8 @@
       </section>
       <section class="social"><a href="https://vk.com/id29755814" class="social__link social__link--vk">VK</a><a href="https://vk.com/id29755814" class="social__link social__link--twitter">Twitter</a><a href="https://www.facebook.com/kornienko.den" class="social__link social__link--facebook">Facebook</a><a href="https://github.com/korney197823" class="social__link social__link--github">GitHub</a></section>
     </main>
+    <footer class="footer">
+      <p>&#169; 2015 Это мой сайт пожалуйста, не копируйте и не воруйте его</p>
+    </footer>
   </body>
 </html>
