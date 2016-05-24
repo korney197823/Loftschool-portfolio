@@ -2,6 +2,16 @@
 .header
   padding: 15px
   background-color: $gray-color
+  position: relative
+  &::after
+    position: absolute
+    content: ''
+    height: 2px
+    width: 100%
+    background-color: #226a7e
+    background-image: linear-gradient(to right, rgba(28, 102, 122, 0.9) 0%, rgba(246, 250, 254, 0.9) 0%, rgba(216, 216, 216, 0.9) 0%, rgba(242, 246, 250, 0.9) 0%, rgba(28, 102, 122, 0.9) 48%, rgba(242, 246, 250, 0.9) 100%)
+    bottom: 0
+    left: 0
 
 .logo
   width: 170px

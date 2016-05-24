@@ -15,54 +15,65 @@
     <header class="header">
       <div class="header__wrap clearfix">
         <div class="logo"><a href="#" class="logo__link"><img src="app/img/logo.png" class="logo__img"></a></div>
-        <nav class="menu">
-          <ul>
-            <li class="menu__item"><a href="#" class="menu__item-link active">Обо мне</a></li>
-            <li class="menu__item"><a href="#" class="menu__item-link">Мои работы</a></li>
-            <li class="menu__item"><a href="#" class="menu__item-link">Связаться со мной</a></li>
-          </ul>
-        </nav>
+        <div class="menu__toggle"></div>
       </div>
     </header>
+    <nav class="menu menu--close">
+      <ul>
+        <li class="menu__item"><a href="#" class="menu__item-link menu__item-link--active">Обо мне</a></li>
+        <li class="menu__item"><a href="#" class="menu__item-link">Мои работы</a></li>
+        <li class="menu__item"><a href="#" class="menu__item-link">Связаться со мной</a></li>
+      </ul>
+    </nav>
     <main>
-      <section class="info container">
-        <h2 class="info__title">Основная информация</h2>
-        <div class="info__photo"><img src="app/img/avatar.jpg" alt="avatar" width="130px" height="130px" class="info__photo-img"></div>
-        <p class="info__description"><span class="info__description-bold">Меня зовут:</span> Корниенко Денис Витальевич</p>
-        <p class="info__description"><span class="info__description-bold">Мой возраст:</span> 25 лет</p>
-        <p class="info__description"><span class="info__description-bold">Мой город:</span> Геленджик</p>
-        <p class="info__description"><span class="info__description-bold">Моя специализация:</span> FRONTEND разработчик</p>
-        <p class="info__description"><span class="info__description-bold">Ключевые навыки:</span>
-          <ul class="skills">
-            <li class="skill__item">html</li>
-            <li class="skill__item">css</li>
-            <li class="skill__item">git</li>
-            <li class="skill__item">gulp</li>
-            <li class="skill__item">javascript</li>
-          </ul>
-        </p>
-      </section>
-      <section class="experience container">
-        <h2 class="experience__title">Опыт работы</h2>
-        <p class="experience__description"><span class="experience__description-bold">ООО "Фирма "Славтранс" Главный бухгалтер</span> Апрель 2015 по настоящее время</p>
-        <p class="experience__description"><span class="experience__description-bold">ООО "Фирма "Славтранс" Заместитель главного бухгалтера</span> Декабрь 2010 - Апрель 2015</p>
-      </section>
-      <section class="education container">
-        <h2 class="education__title">Образование</h2>
-        <p class="education__description"><span class="education__description-bold">Томский Государственный Архитектурно-строительный университет</span> Сентябрь 2000 - Октябрь 2005</p>
-        <p class="education__description"><span class="education__description-bold">HTML-academy Базовый и Продвинутый интенсивы</span> Февраль 2016 - Май 2016</p>
-      </section>
+      <div class="container">
+        <section class="info">
+          <h2 class="info__title">Основная информация</h2>
+          <div class="info__photo"><img src="app/img/avatar.jpg" alt="avatar" width="130px" height="130px" class="info__photo-img"></div>
+          <p class="info__description"><span class="info__description-bold">Меня зовут:</span> Корниенко Денис Витальевич</p>
+          <p class="info__description"><span class="info__description-bold">Мой возраст:</span> 25 лет</p>
+          <p class="info__description"><span class="info__description-bold">Мой город:</span> Геленджик</p>
+          <p class="info__description"><span class="info__description-bold">Моя специализация:</span> FRONTEND разработчик</p>
+          <p class="info__description"><span class="info__description-bold">Ключевые навыки:</span>
+            <ul class="skills">
+              <li class="skill__item">html</li>
+              <li class="skill__item">css</li>
+              <li class="skill__item">git</li>
+              <li class="skill__item">gulp</li>
+              <li class="skill__item">javascript</li>
+            </ul>
+          </p>
+        </section>
+      </div>
+      <div class="container">
+        <section class="experience">
+          <h2 class="experience__title">Опыт работы</h2>
+          <p class="experience__description"><span class="experience__description-bold">ООО "Фирма "Славтранс" Главный бухгалтер</span> Апрель 2015 по настоящее время</p>
+          <p class="experience__description"><span class="experience__description-bold">ООО "Фирма "Славтранс" Заместитель главного бухгалтера</span> Декабрь 2010 - Апрель 2015</p>
+        </section>
+      </div>
+      <div class="container">
+        <section class="education">
+          <h2 class="education__title">Образование</h2>
+          <p class="education__description"><span class="education__description-bold">Томский Государственный Архитектурно-строительный университет</span> Сентябрь 2000 - Октябрь 2005</p>
+          <p class="education__description"><span class="education__description-bold">HTML-academy Базовый и Продвинутый интенсивы</span> Февраль 2016 - Май 2016</p>
+        </section>
+      </div>
       <section class="contacts">
         <ul class="contacts__list">
-          <li class="contacts__item"><a href="mailto:korney197823@gmail.com" class="contacts__mail">korney197823@gmail.com</a></li>
-          <li class="contacts__item"><a href="tel:+78125556666" class="contacts__phone">+79883337098</a></li>
-          <li class="contacts__item"><a href="skype:korney1978?chat" class="contacts__skype">korney197823</a></li>
+          <li class="contacts__item contacts__item--dark"><a href="mailto:korney197823@gmail.com" class="contacts__mail">korney197823@gmail.com</a></li>
+          <li class="contacts__item contacts__item--middle"><a href="tel:+78125556666" class="contacts__phone">+79883337098</a></li>
+          <li class="contacts__item contacts__item--light"><a href="skype:korney1978?chat" class="contacts__skype">korney197823</a></li>
         </ul>
       </section>
-      <section class="social"><a href="https://vk.com/id29755814" class="social__link social__link--vk">VK</a><a href="https://vk.com/id29755814" class="social__link social__link--twitter">Twitter</a><a href="https://www.facebook.com/kornienko.den" class="social__link social__link--facebook">Facebook</a><a href="https://github.com/korney197823" class="social__link social__link--github">GitHub</a></section>
+      <section class="social">
+        <div class="social__wrap container"><a href="https://vk.com/id29755814" class="social__link social__link--vk">VK</a><a href="https://vk.com/id29755814" class="social__link social__link--twitter">Twitter</a><a href="https://www.facebook.com/kornienko.den" class="social__link social__link--facebook">Facebook</a><a href="https://github.com/korney197823" class="social__link social__link--github">GitHub</a></div>
+      </section>
     </main>
     <footer class="footer">
       <p>&#169; 2015 Это мой сайт пожалуйста, не копируйте и не воруйте его</p>
     </footer>
+    <script src="app/libs/jquery/dist/jquery.min.js"></script>
+    <script src="app/js/main.js"></script>
   </body>
 </html>
