@@ -13,88 +13,100 @@ html
     link(rel='stylesheet', href='app/css/style.css')
 
   body
-    header.header
-      .header__wrap.clearfix
-        .logo
-          a.logo__link(href="#")
-            img.logo__img(src="app/img/logo.png")
-        .menu__toggle
+    .wrapper
+      .content
+        header.header
+          .header__wrap.clearfix
+            .logo
+              a.logo__link(href="#")
+                img.logo__img(src="app/img/logo.png")
+            .menu__toggle
 
-    nav.menu.menu--close
-      ul
-        li.menu__item
-          a.menu__item-link.menu__item-link--active(href="#") Обо мне
-        li.menu__item
-          a.menu__item-link(href="#") Мои работы
-        li.menu__item
-          a.menu__item-link(href="#") Связаться со мной
+        nav.menu.menu--close
+          ul
+            li.menu__item
+              a.menu__item-link.menu__item-link--active(href="#") Обо мне
+            li.menu__item
+              a.menu__item-link(href="#") Мои работы
+            li.menu__item
+              a.menu__item-link(href="form.html") Связаться со мной
 
-    main
-      .container
-        section.info
-          h2.info__title Основная информация
-          div.info__photo
-            img.info__photo-img(src="app/img/avatar.jpg", alt="avatar", width="130px", height="130px")
-          p.info__description
-            span.info__description-bold Меня зовут:
-            |  Корниенко Денис Витальевич
-          p.info__description
-            span.info__description-bold Мой возраст:
-            |  25 лет
-          p.info__description
-            span.info__description-bold Мой город:
-            |  Геленджик
-          p.info__description
-            span.info__description-bold Моя специализация:
-            |  FRONTEND разработчик
-          p.info__description
-            span.info__description-bold Ключевые навыки:
-            ul.skills
-              li.skill__item html
-              li.skill__item css
-              li.skill__item git
-              li.skill__item gulp
-              li.skill__item javascript
+        main
+          .container
+            section.info
+              h2.info__title Основная информация
+              div.info__photo
+                img.info__photo-img(src="app/img/avatar.jpg", alt="avatar", width="130px", height="130px")
+              p.info__description
+                span.info__description-bold Меня зовут:
+                |  Корниенко Денис Витальевич
+              p.info__description
+                span.info__description-bold Мой возраст:
+                |  25 лет
+              p.info__description
+                span.info__description-bold Мой город:
+                |  Геленджик
+              p.info__description
+                span.info__description-bold Моя специализация:
+                |  FRONTEND разработчик
+              p.info__description
+                span.info__description-bold Ключевые навыки:
+                ul.skills
+                  li.skill__item html
+                  li.skill__item css
+                  li.skill__item git
+                  li.skill__item gulp
+                  li.skill__item javascript
 
-      .container
-        section.experience
-          h2.experience__title Опыт работы
-          p.experience__description
-            span.experience__description-bold ООО "Фирма "Славтранс" Главный бухгалтер
-            |  Апрель 2015 по настоящее время
-          p.experience__description
-            span.experience__description-bold ООО "Фирма "Славтранс" Заместитель главного бухгалтера
-            |  Декабрь 2010 - Апрель 2015
+          .container
+            section.experience
+              h2.experience__title Опыт работы
+              p.experience__description
+                i.sprite.sprite-case
+                span.experience__description-bold ООО "Фирма "Славтранс" Главный бухгалтер
+                |  Апрель 2015 по настоящее время
+              p.experience__description
+                i.sprite.sprite-case
+                span.experience__description-bold ООО "Фирма "Славтранс" Заместитель главного бухгалтера
+                |  Декабрь 2010 - Апрель 2015
 
 
-      .container
-        section.education
-          h2.education__title Образование
-          p.education__description
-            span.education__description-bold Томский Государственный Архитектурно-строительный университет
-            |  Сентябрь 2000 - Октябрь 2005
-          p.education__description
-            span.education__description-bold HTML-academy Базовый и Продвинутый интенсивы
-            |  Февраль 2016 - Май 2016
+          .container
+            section.education
+              h2.education__title Образование
+              p.education__description
+                i.sprite.sprite-hat
+                span.education__description-bold Томский Государственный Архитектурно-строительный университет
+                |  Сентябрь 2000 - Октябрь 2005
+              p.education__description
+                i.sprite.sprite-page
+                span.education__description-bold HTML-academy Базовый и Продвинутый интенсивы
+                |  Февраль 2016 - Май 2016
 
-      section.contacts
-        ul.contacts__list
-          li.contacts__item.contacts__item--dark
-            a(class="contacts__mail", href="mailto:korney197823@gmail.com") korney197823@gmail.com
-          li.contacts__item.contacts__item--middle
-            a(class="contacts__phone", href="tel:+78125556666") +79883337098
-          li.contacts__item.contacts__item--light
-            a(class="contacts__skype", href="skype:korney1978?chat") korney197823
+          section.contacts
+            ul.contacts__list
+              li.contacts__item.contacts__item--dark
+                .contacts__item-wrap
+                  i.sprite.sprite-mail
+                  a(class="contacts__mail", href="mailto:korney197823@gmail.com") korney197823@gmail.com
+              li.contacts__item.contacts__item--middle
+                .contacts__item-wrap
+                  i.sprite.sprite-phone
+                  a(class="contacts__phone", href="tel:+78125556666") +79883337098
+              li.contacts__item.contacts__item--light
+                .contacts__item-wrap
+                  i.sprite.sprite-skype
+                  a(class="contacts__skype", href="skype:korney1978?chat") korney197823
 
-      section.social
-        .social__wrap.container
-          a.social__link.social__link--vk(href="https://vk.com/id29755814") VK
-          a.social__link.social__link--twitter(href="https://vk.com/id29755814") Twitter
-          a.social__link.social__link--facebook(href="https://www.facebook.com/kornienko.den") Facebook
-          a.social__link.social__link--github(href="https://github.com/korney197823") GitHub
+          section.social
+            .social__wrap.container
+              a.social__link.social__link--vk(href="https://vk.com/id29755814") VK
+              a.social__link.social__link--twitter(href="https://vk.com/id29755814") Twitter
+              a.social__link.social__link--facebook(href="https://www.facebook.com/kornienko.den") Facebook
+              a.social__link.social__link--github(href="https://github.com/korney197823") GitHub
 
-    footer.footer
-      p &#169; 2015 Это мой сайт пожалуйста, не копируйте и не воруйте его
+      footer.footer
+        p &#169; 2015 Это мой сайт пожалуйста, не копируйте и не воруйте его
 
 
     script(src="app/libs/jquery/dist/jquery.min.js")

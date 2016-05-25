@@ -1,0 +1,57 @@
+
+
+doctype html
+html
+  head
+    meta(charset='utf-8')
+
+    title Портфолио Корнея
+    meta(name='description', content='')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    link(rel='stylesheet', href='app/css/normalize.css')
+    link(rel='stylesheet', href='app/css/style.css')
+
+  body
+    .wrapper
+      .content
+        header.header
+          .header__wrap.clearfix
+            .logo
+              a.logo__link(href="#")
+                img.logo__img(src="app/img/logo.png")
+            .menu__toggle
+
+        nav.menu.menu--close
+          ul
+            li.menu__item
+              a.menu__item-link(href="index.html") Обо мне
+            li.menu__item
+              a.menu__item-link(href="#") Мои работы
+            li.menu__item
+              a.menu__item-link.menu__item-link--active(href="#") Связаться со мной
+
+        .container
+          form.form
+            h2.form__title.
+              У вас есть интересный проект?
+              Напишите мне
+
+            label.label Имя
+              input.input(type="text")
+            label.label Email
+              input.input(type="text")
+            label.label Имя
+              textarea Кратко, в чем суть
+            input.button.button--submit(type="submit")
+            input.button.button--reset(type="reset")
+
+      footer.footer
+        p &#169; 2015 Это мой сайт пожалуйста, не копируйте и не воруйте его
+
+    script(src="app/libs/jquery/dist/jquery.min.js")
+    script(src="app/js/main.js")
+
+
+
+

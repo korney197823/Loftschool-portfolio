@@ -7,11 +7,24 @@ html
   box-sizing: inherit
 
 body
-  //width: 320px
+
   margin: 0 auto
+  padding: 0
   font-family: FiraSansRegular, sans-serif
   color: #5a636b
   background-image: url(../img/comppattern2.png)
+  @media ($tablet-width)
+
+
+  @media ($desktop-width)
+
+.wrapper
+
+
+.content
+  min-height: calc(100vh - 38px)
+
+
 
 .clearfix:before,
 .clearfix:after
@@ -47,7 +60,8 @@ a
   background-image: url(../img/spritesheet.png)
   background-repeat: no-repeat
   display: block
-
+  margin: 0 auto
+  margin-bottom: 15px
 
 .sprite-add_img
   width: 32px
