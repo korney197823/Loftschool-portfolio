@@ -7,6 +7,7 @@ html {
   box-sizing: inherit; }
 
 body {
+  min-width: 320px;
   margin: 0 auto;
   padding: 0;
   font-family: FiraSansRegular, sans-serif;
@@ -204,6 +205,89 @@ a {
     left: 0; }
   .footer p {
     margin: 0; }
+
+.form {
+  background-color: #eff3f7;
+  margin-top: 15px;
+  padding-bottom: 40px;
+  margin-bottom: 22px; }
+
+.form__title {
+  margin-bottom: 0;
+  padding: 30px 6px 40px;
+  background-color: #48cbe8;
+  background-image: linear-gradient(to bottom,#48cbe8 87.7%, #67dffa 12.3%);
+  border-radius: 4px 4px 0 0;
+  font-family: FiraSansBook, sans-serif;
+  font-size: 19px;
+  color: #ffffff; }
+
+.form__input-wrap {
+  padding: 15px;
+  padding-top: 0; }
+
+.label {
+  margin-top: 25px;
+  display: block;
+  font-family: FiraSansLight, sans-serif;
+  font-size: 18px; }
+
+.input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  background-color: #fbfcfd;
+  border: 1px solid #3ba8c0;
+  border-radius: 3px;
+  outline: none;
+  font-size: 13px;
+  color: #3ba8c0; }
+
+textarea {
+  min-height: 100px; }
+
+.capcha__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.capcha__title {
+  font-family: FiraSansLight, sans-serif;
+  font-size: 15px; }
+
+.capcha__img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 128px;
+  height: 73px;
+  background-color: #fbfcfd;
+  border: 1px solid #3ba8c0;
+  border-radius: 3px;
+  margin-right: 25px; }
+  .capcha__img img {
+    transform: translateY(50%); }
+
+.input--capcha {
+  display: inline-block;
+  vertical-align: middle; }
+
+.button__wrap {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between; }
+
+.button {
+  width: 104px;
+  height: 31px;
+  border: none;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: FiraSansBook, sans-serif; }
+  .button--submit {
+    background-color: #48cbe8; }
+  .button--reset {
+    background-color: #849db5; }
 
 .header {
   padding: 7px 15px;

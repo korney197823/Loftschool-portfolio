@@ -30,19 +30,27 @@
             <h2 class="form__title">
               У вас есть интересный проект?
               Напишите мне
-              
             </h2>
-            <label class="label">Имя
-              <input type="text" class="input">
-            </label>
-            <label class="label">Email
-              <input type="text" class="input">
-            </label>
-            <label class="label">Имя
-              <textarea>Кратко, в чем суть</textarea>
-            </label>
-            <input type="submit" class="button button--submit">
-            <input type="reset" class="button button--reset">
+            <div class="form__input-wrap">
+              <label class="label">Имя
+                <input type="text" value="Как к Вам обращаться" class="input">
+              </label>
+              <label class="label">Email
+                <input type="text" value="Куда мне писать" class="input">
+              </label>
+              <label class="label">Сообщение
+                <textarea>Кратко, в чем суть</textarea>
+              </label>
+              <h3 class="capcha__title">Введите код, указанный на картинке</h3>
+              <div class="capcha__wrap">
+                <div class="capcha__img"><img src="app/img/capcha.png" alt="capcha"></div>
+                <input type="text" class="input input--capcha">
+              </div>
+              <div class="button__wrap">
+                <input type="submit" class="button button--submit">
+                <input type="reset" class="button button--reset">
+              </div>
+            </div>
           </form>
         </div>
       </div>

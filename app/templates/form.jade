@@ -36,15 +36,24 @@ html
             h2.form__title.
               У вас есть интересный проект?
               Напишите мне
+            .form__input-wrap
+              label.label Имя
+                input.input(type="text", value="Как к Вам обращаться")
+              label.label Email
+                input.input(type="text", value="Куда мне писать")
+              label.label Сообщение
+                textarea Кратко, в чем суть
 
-            label.label Имя
-              input.input(type="text")
-            label.label Email
-              input.input(type="text")
-            label.label Имя
-              textarea Кратко, в чем суть
-            input.button.button--submit(type="submit")
-            input.button.button--reset(type="reset")
+              h3.capcha__title Введите код, указанный на картинке
+              .capcha__wrap
+                .capcha__img
+                  img(src="app/img/capcha.png", alt="capcha")
+                input.input.input--capcha(type="text")
+
+              .button__wrap
+                input.button.button--submit(type="submit")
+                input.button.button--reset(type="reset")
+
 
       footer.footer
         p &#169; 2015 Это мой сайт пожалуйста, не копируйте и не воруйте его
