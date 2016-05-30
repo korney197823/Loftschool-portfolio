@@ -1,35 +1,40 @@
 .social
   padding: 20px 27px
+  &--header
+    display: none
+    @media ($tablet-width)
+      display: block
+      float: right
+      width: 280px
+      margin-right: 55px
+      padding: 0
+  &--footer
+    @media ($tablet-width)
+      display: none
 
 .social__wrap
   width: 300px
 
 .social__link
-  background-image: url(../img/spritesheet.png)
-  background-repeat: no-repeat
   display: inline-block
-  font-size: 0
   &:not(:last-of-type)
     margin-right: 19px
+  i
+    background-color: #3ba8c0
+    border-radius: 50%
+    width: 52px
+    height: 52px
+    font-size: 30px
+    color: #ffffff
+    text-align: center
+    vertical-align: middle
+    line-height: 51px
+    @media ($tablet-width)
+      width: 42px
+      height: 42px
+      line-height: 42px
+      background-color: #58697a
+      &:hover
+        background-color: #3ba8c0
 
-.social__link--facebook
-  width: 52px
-  height: 51px
-  background-position: -10px -156px
 
-
-.social__link--github
-  width: 52px
-  height: 51px
-  background-position: -10px -227px
-
-.social__link--twitter
-  width: 52px
-  height: 51px
-  background-position: -10px -577px
-
-
-.social__link--vk
-  width: 52px
-  height: 51px
-  background-position: -10px -648px

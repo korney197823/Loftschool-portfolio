@@ -10,6 +10,7 @@ html
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
     link(rel='stylesheet', href='app/css/normalize.css')
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css")
     link(rel='stylesheet', href='app/css/style.css')
 
   body
@@ -20,7 +21,21 @@ html
             .logo
               a.logo__link(href="#")
                 img.logo__img(src="app/img/logo.png")
+
+
+
             .menu__toggle
+
+            section.social.social--header
+              .social__wrap.container
+                a.social__link.social__link--vk(href="https://vk.com/id29755814")
+                  i.fa.fa-vk
+                a.social__link.social__link--twitter(href="https://vk.com/id29755814")
+                  i.fa.fa-twitter
+                a.social__link.social__link--facebook(href="https://www.facebook.com/kornienko.den")
+                  i.fa.fa-facebook
+                a.social__link.social__link--github(href="https://github.com/korney197823")
+                  i.fa.fa-github
 
         nav.menu.menu--close
           ul
@@ -33,30 +48,31 @@ html
 
         main
           .container
-            section.info
+            section.info.clearfix
               h2.info__title Основная информация
               div.info__photo
-                img.info__photo-img(src="app/img/avatar.jpg", alt="avatar", width="130px", height="130px")
-              p.info__description
-                span.info__description-bold Меня зовут:
-                |  Корниенко Денис Витальевич
-              p.info__description
-                span.info__description-bold Мой возраст:
-                |  25 лет
-              p.info__description
-                span.info__description-bold Мой город:
-                |  Геленджик
-              p.info__description
-                span.info__description-bold Моя специализация:
-                |  FRONTEND разработчик
-              p.info__description
-                span.info__description-bold Ключевые навыки:
-                ul.skills
-                  li.skill__item html
-                  li.skill__item css
-                  li.skill__item git
-                  li.skill__item gulp
-                  li.skill__item javascript
+                img.info__photo-img(src="app/img/avatar.jpg", alt="avatar")
+              .info__description-wrap
+                p.info__description
+                  span.info__description-bold Меня зовут:
+                  |  Корниенко Денис Витальевич
+                p.info__description
+                  span.info__description-bold Мой возраст:
+                  |  25 лет
+                p.info__description
+                  span.info__description-bold Мой город:
+                  |  Геленджик
+                p.info__description
+                  span.info__description-bold Моя специализация:
+                  |  FRONTEND разработчик
+                p.info__description.info__description--skills
+                  span.info__description-bold Ключевые навыки:
+                  ul.skills
+                    li.skill__item html
+                    li.skill__item css
+                    li.skill__item git
+                    li.skill__item gulp
+                    li.skill__item javascript
 
           .container
             section.experience
@@ -98,12 +114,16 @@ html
                   i.sprite.sprite-skype
                   a(class="contacts__skype", href="skype:korney1978?chat") korney197823
 
-          section.social
+          section.social.social--footer
             .social__wrap.container
-              a.social__link.social__link--vk(href="https://vk.com/id29755814") VK
-              a.social__link.social__link--twitter(href="https://vk.com/id29755814") Twitter
-              a.social__link.social__link--facebook(href="https://www.facebook.com/kornienko.den") Facebook
-              a.social__link.social__link--github(href="https://github.com/korney197823") GitHub
+              a.social__link.social__link--vk(href="https://vk.com/id29755814")
+                i.fa.fa-vk
+              a.social__link.social__link--twitter(href="https://vk.com/id29755814")
+                i.fa.fa-twitter
+              a.social__link.social__link--facebook(href="https://www.facebook.com/kornienko.den")
+                i.fa.fa-facebook
+              a.social__link.social__link--github(href="https://github.com/korney197823")
+                i.fa.fa-github
 
       footer.footer
         p &#169; 2015 Это мой сайт пожалуйста, не копируйте и не воруйте его
