@@ -32,12 +32,14 @@
               Напишите мне
             </h2>
             <div class="form__input-wrap">
-              <label class="label">Имя
-                <input type="text" value="Как к Вам обращаться" class="input">
-              </label>
-              <label class="label">Email
-                <input type="text" value="Куда мне писать" class="input">
-              </label>
+              <div class="form__name-wrap">
+                <label class="label">Имя
+                  <input type="text" name="name" value="Как к Вам обращаться" class="input">
+                </label>
+                <label class="label">Email
+                  <input type="text" name="email" value="Куда мне писать" class="input">
+                </label>
+              </div>
               <label class="label">Сообщение
                 <textarea>Кратко, в чем суть</textarea>
               </label>
@@ -53,6 +55,19 @@
             </div>
           </form>
         </div>
+        <section class="contacts">
+          <ul class="contacts__list">
+            <li class="contacts__item contacts__item--dark">
+              <div class="contacts__item-wrap"><i class="sprite sprite-mail"></i><a href="mailto:korney197823@gmail.com" class="contacts__mail">korney197823@gmail.com</a></div>
+            </li>
+            <li class="contacts__item contacts__item--middle">
+              <div class="contacts__item-wrap"><i class="sprite sprite-phone"></i><a href="tel:+78125556666" class="contacts__phone">+79883337098</a></div>
+            </li>
+            <li class="contacts__item contacts__item--light">
+              <div class="contacts__item-wrap"><i class="sprite sprite-skype"></i><a href="skype:korney1978?chat" class="contacts__skype">korney197823</a></div>
+            </li>
+          </ul>
+        </section>
       </div>
       <footer class="footer">
         <p>&#169; 2015 Это мой сайт пожалуйста, не копируйте и не воруйте его</p>

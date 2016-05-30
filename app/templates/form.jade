@@ -37,10 +37,11 @@ html
               У вас есть интересный проект?
               Напишите мне
             .form__input-wrap
-              label.label Имя
-                input.input(type="text", value="Как к Вам обращаться")
-              label.label Email
-                input.input(type="text", value="Куда мне писать")
+              .form__name-wrap
+                label.label Имя
+                  input.input(type="text", name="name", value="Как к Вам обращаться")
+                label.label Email
+                  input.input(type="text", name="email", value="Куда мне писать")
               label.label Сообщение
                 textarea Кратко, в чем суть
 
@@ -53,6 +54,22 @@ html
               .button__wrap
                 input.button.button--submit(type="submit")
                 input.button.button--reset(type="reset")
+
+        section.contacts
+          ul.contacts__list
+            li.contacts__item.contacts__item--dark
+              .contacts__item-wrap
+                i.sprite.sprite-mail
+                a(class="contacts__mail", href="mailto:korney197823@gmail.com") korney197823@gmail.com
+            li.contacts__item.contacts__item--middle
+              .contacts__item-wrap
+                i.sprite.sprite-phone
+                a(class="contacts__phone", href="tel:+78125556666") +79883337098
+            li.contacts__item.contacts__item--light
+              .contacts__item-wrap
+                i.sprite.sprite-skype
+                a(class="contacts__skype", href="skype:korney1978?chat") korney197823
+
 
 
       footer.footer

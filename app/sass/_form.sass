@@ -12,11 +12,26 @@
   border-radius: 4px 4px 0 0
   font-family: FiraSansBook, sans-serif
   font-size: 19px
+  font-weight: 300
   color: #ffffff
+  @media ($tablet-width)
+    font-size: 27px
+    padding-top: 45px
+    padding-bottom: 45px
+
 
 .form__input-wrap
   padding: 15px
   padding-top: 0
+  @media ($tablet-width)
+    padding: 35px 124px 55px 124px
+
+.form__name-wrap
+  @media ($tablet-width)
+    display: flex
+    justify-content: space-between
+    label
+      width: calc(50% - 18px)
 
 .label
   margin-top: 25px
@@ -35,10 +50,14 @@ textarea
   font-size: 13px
   color: #3ba8c0
 
+input[name="name"],
+input[name="email"]
 
 
 textarea
   min-height: 100px
+  @media ($tablet-width)
+    min-height: 205px
 
 .capcha__wrap
   display: flex
@@ -56,12 +75,18 @@ textarea
   border: 1px solid #3ba8c0
   border-radius: 3px
   margin-right: 25px
+  @media ($tablet-width)
+    width: calc(50% - 11px)
   img
     transform: translateY(50%)
+    @media ($tablet-width)
+      transform: translateY(50%) translateX(50%)
 
 .input--capcha
   display: inline-block
   vertical-align: middle
+  @media ($tablet-width)
+    width: calc(50% - 11px)
   //width: 112px
 
 .button__wrap
@@ -81,3 +106,6 @@ textarea
     background-color: #48cbe8
   &--reset
     background-color: #849db5
+  @media ($tablet-width)
+    width: 140px
+    height: 34px
