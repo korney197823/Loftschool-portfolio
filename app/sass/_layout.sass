@@ -65,7 +65,13 @@ a
   display: block
   margin: 0 auto
   margin-bottom: 15px
-
+  @media ($tablet-width)
+    margin-right: 25px
+    margin-left: 60px
+  &--last
+    @media ($tablet-width)
+      margin-right: 32px
+      margin-left: 74px
 .sprite-add_img
   width: 32px
   height: 32px

@@ -57,6 +57,14 @@ a {
   display: block;
   margin: 0 auto;
   margin-bottom: 15px; }
+  @media (min-width: 768px) {
+    .sprite {
+      margin-right: 25px;
+      margin-left: 60px; } }
+  @media (min-width: 768px) {
+    .sprite--last {
+      margin-right: 32px;
+      margin-left: 74px; } }
 
 .sprite-add_img {
   width: 32px;
@@ -105,12 +113,22 @@ a {
 
 .contacts {
   margin-top: 40px; }
+  @media (min-width: 768px) {
+    .contacts {
+      margin-bottom: 30px; } }
+
+@media (min-width: 768px) {
+  .contacts__list {
+    display: flex; } }
 
 .contacts__item-wrap {
   width: 230px;
   margin: 0 auto;
   display: flex;
   align-items: center; }
+  @media (min-width: 768px) {
+    .contacts__item-wrap {
+      width: auto; } }
   .contacts__item-wrap i {
     display: inline-block;
     margin: 0;
@@ -119,6 +137,9 @@ a {
 
 .contacts__item {
   padding: 10px; }
+  @media (min-width: 768px) {
+    .contacts__item {
+      width: 33.333333333%; } }
   .contacts__item--dark {
     background-color: #27a1ba; }
   .contacts__item--middle {
@@ -140,14 +161,29 @@ a {
     .education {
       margin-top: 35px; } }
 
+@media (min-width: 768px) {
+  .education__title {
+    padding: 20px;
+    width: 225px;
+    border-bottom: 2px solid #3ba8c0; } }
+
 .education__description {
   text-align: center;
   font-size: 15px;
   font-family: FiraSansLight, sans-serif; }
+  @media (min-width: 768px) {
+    .education__description {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 30px; } }
   .education__description-bold {
     display: block;
     font-family: FiraSansBook, sans-serif;
     font-size: 17px; }
+
+@media (min-width: 768px) {
+  .education__description-text {
+    text-align: left; } }
 
 .experience {
   margin-top: 15px;
@@ -156,14 +192,29 @@ a {
     .experience {
       margin-top: 35px; } }
 
+@media (min-width: 768px) {
+  .experience__title {
+    padding: 20px;
+    width: 225px;
+    border-bottom: 2px solid #3ba8c0; } }
+
 .experience__description {
   text-align: center;
   font-size: 15px;
   font-family: FiraSansLight, sans-serif; }
+  @media (min-width: 768px) {
+    .experience__description {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 30px; } }
   .experience__description-bold {
     display: block;
     font-family: FiraSansBook, sans-serif;
     font-size: 17px; }
+
+@media (min-width: 768px) {
+  .experience__description-text {
+    text-align: left; } }
 
 @font-face {
   font-family: "FiraSansBook";
@@ -331,9 +382,16 @@ textarea {
       margin-top: 35px; } }
 
 @media (min-width: 768px) {
+  .info__wrapper {
+    margin: 0 auto;
+    width: 700px;
+    padding-bottom: 50px; } }
+
+@media (min-width: 768px) {
   .info__title {
     padding: 20px;
-    width: 310px; } }
+    width: 310px;
+    border-bottom: 2px solid #3ba8c0; } }
 
 .info__photo {
   width: 130px;

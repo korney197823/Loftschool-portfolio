@@ -1,13 +1,19 @@
 .contacts
   margin-top: 40px
+  @media ($tablet-width)
+    margin-bottom: 30px
 
 .contacts__list
+  @media ($tablet-width)
+    display: flex
 
 .contacts__item-wrap
   width: 230px
   margin: 0 auto
   display: flex
   align-items: center
+  @media ($tablet-width)
+    width: auto
   i
     display: inline-block
     margin: 0
@@ -15,6 +21,8 @@
     line-height: 39px
 .contacts__item
   padding: 10px
+  @media ($tablet-width)
+    width: 33.333333333%
   &--dark
     background-color: #27a1ba
   &--middle

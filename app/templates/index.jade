@@ -48,56 +48,63 @@ html
 
         main
           .container
-            section.info.clearfix
-              h2.info__title Основная информация
-              div.info__photo
-                img.info__photo-img(src="app/img/avatar.jpg", alt="avatar")
-              .info__description-wrap
-                p.info__description
-                  span.info__description-bold Меня зовут:
-                  |  Корниенко Денис Витальевич
-                p.info__description
-                  span.info__description-bold Мой возраст:
-                  |  25 лет
-                p.info__description
-                  span.info__description-bold Мой город:
-                  |  Геленджик
-                p.info__description
-                  span.info__description-bold Моя специализация:
-                  |  FRONTEND разработчик
-                p.info__description.info__description--skills
-                  span.info__description-bold Ключевые навыки:
-                  ul.skills
-                    li.skill__item html
-                    li.skill__item css
-                    li.skill__item git
-                    li.skill__item gulp
-                    li.skill__item javascript
+            section.info
+              .info__wrapper.clearfix
+                h2.info__title Основная информация
+                div.info__photo
+                  img.info__photo-img(src="app/img/avatar.jpg", alt="avatar")
+                .info__description-wrap
+                  p.info__description
+                    span.info__description-bold Меня зовут:
+                    |  Корниенко Денис Витальевич
+                  p.info__description
+                    span.info__description-bold Мой возраст:
+                    |  25 лет
+                  p.info__description
+                    span.info__description-bold Мой город:
+                    |  Геленджик
+                  p.info__description
+                    span.info__description-bold Моя специализация:
+                    |  FRONTEND разработчик
+                  p.info__description.info__description--skills
+                    span.info__description-bold Ключевые навыки:
+                    ul.skills
+                      li.skill__item html
+                      li.skill__item css
+                      li.skill__item git
+                      li.skill__item gulp
+                      li.skill__item javascript
 
           .container
             section.experience
-              h2.experience__title Опыт работы
-              p.experience__description
-                i.sprite.sprite-case
-                span.experience__description-bold ООО "Фирма "Славтранс" Главный бухгалтер
-                |  Апрель 2015 по настоящее время
-              p.experience__description
-                i.sprite.sprite-case
-                span.experience__description-bold ООО "Фирма "Славтранс" Заместитель главного бухгалтера
-                |  Декабрь 2010 - Апрель 2015
+              .info__wrapper.clearfix
+                h2.experience__title Опыт работы
+                div.experience__description
+                  i.sprite.sprite-case
+                  .experience__description-title
+                    .experience__description-bold ООО "Фирма "Славтранс" Главный бухгалтер
+                    .experience__description-text Апрель 2015 по настоящее время
+                div.experience__description
+                  i.sprite.sprite-case
+                  .experience__description-title
+                    .experience__description-bold ООО "Фирма "Славтранс" Заместитель главного бухгалтера
+                    .experience__description-text  Декабрь 2010 - Апрель 2015
 
 
           .container
             section.education
-              h2.education__title Образование
-              p.education__description
-                i.sprite.sprite-hat
-                span.education__description-bold Томский Государственный Архитектурно-строительный университет
-                |  Сентябрь 2000 - Октябрь 2005
-              p.education__description
-                i.sprite.sprite-page
-                span.education__description-bold HTML-academy Базовый и Продвинутый интенсивы
-                |  Февраль 2016 - Май 2016
+              .info__wrapper.clearfix
+                h2.education__title Образование
+                .education__description
+                  i.sprite.sprite-hat
+                  .education__description-title
+                    .education__description-bold Томский Государственный Архитектурно-строительный университет
+                    .education__description-text  Сентябрь 2000 - Октябрь 2005
+                .education__description
+                  i.sprite.sprite-page.sprite--last
+                  .education__description-title
+                    .education__description-bold HTML-academy Базовый и Продвинутый интенсивы
+                    .education__description-text  Февраль 2016 - Май 2016
 
           section.contacts
             ul.contacts__list
