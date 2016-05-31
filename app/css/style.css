@@ -305,6 +305,17 @@ a {
   .footer p {
     margin: 0; }
 
+.footer__wrap {
+  display: flex;
+  justify-content: space-around; }
+  @media (min-width: 768px) {
+    .footer__wrap {
+      width: 700px;
+      margin: 0 auto; } }
+  @media (min-width: 1400px) {
+    .footer__wrap {
+      width: 960px; } }
+
 @media (min-width: 1400px) {
   .container--form {
     float: right;
