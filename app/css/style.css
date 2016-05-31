@@ -284,6 +284,15 @@ a {
   background-color: #eff3f7;
   text-align: center;
   padding: 0 50px; }
+  @media (min-width: 768px) {
+    .footer {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 13px; } }
+  @media (min-width: 1400px) {
+    .footer {
+      padding-top: 30px;
+      padding-bottom: 30px; } }
   .footer::before {
     position: absolute;
     content: '';
