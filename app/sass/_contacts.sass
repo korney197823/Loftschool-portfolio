@@ -2,10 +2,15 @@
   margin-top: 40px
   @media ($tablet-width)
     margin-bottom: 30px
+  @media ($desktop-width)
+    float: left
+    width: 250px
 
 .contacts__list
   @media ($tablet-width)
     display: flex
+  @media ($desktop-width)
+    flex-direction: column
 
 .contacts__item-wrap
   width: 230px
@@ -23,6 +28,8 @@
   padding: 10px
   @media ($tablet-width)
     width: 33.333333333%
+  @media ($desktop-width)
+    width: 100%
   &--dark
     background-color: #27a1ba
   &--middle

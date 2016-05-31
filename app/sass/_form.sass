@@ -1,9 +1,17 @@
 @import "bourbon"
+
+.container--form
+  @media ($desktop-width)
+    float: right
+    width: 650px
+
 .form
   background-color: #eff3f7
   margin-top: 15px
   padding-bottom: 40px
   margin-bottom: 22px
+  @media ($desktop-width)
+    margin-top: 0
 
 .form__title
   margin-bottom: 0
@@ -102,6 +110,7 @@ textarea
   color: #ffffff
   font-size: 16px
   font-family: FiraSansBook, sans-serif
+  cursor: pointer
   &--submit
     background-color: #48cbe8
   &--reset

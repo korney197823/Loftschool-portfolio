@@ -14,60 +14,65 @@
       <div class="content">
         <header class="header">
           <div class="header__wrap clearfix">
-            <div class="logo"><a href="#" class="logo__link"><img src="app/img/logo.png" class="logo__img"></a></div>
+            <div class="logo"><a href="index.html" class="logo__link"><img src="app/img/logo.png" class="logo__img"></a></div>
             <div class="menu__toggle"></div>
+            <section class="social social--header">
+              <div class="social__wrap container"><a href="https://vk.com/id29755814" class="social__link social__link--vk"><i class="fa fa-vk"></i></a><a href="https://vk.com/id29755814" class="social__link social__link--twitter"><i class="fa fa-twitter"></i></a><a href="https://www.facebook.com/kornienko.den" class="social__link social__link--facebook"><i class="fa fa-facebook"></i></a><a href="https://github.com/korney197823" class="social__link social__link--github"><i class="fa fa-github"></i></a></div>
+            </section>
           </div>
         </header>
-        <nav class="menu menu--close">
-          <ul>
-            <li class="menu__item"><a href="index.html" class="menu__item-link">Обо мне</a></li>
-            <li class="menu__item"><a href="#" class="menu__item-link">Мои работы</a></li>
-            <li class="menu__item"><a href="#" class="menu__item-link menu__item-link--active">Связаться со мной</a></li>
-          </ul>
-        </nav>
-        <div class="container">
-          <form class="form">
-            <h2 class="form__title">
-              У вас есть интересный проект?
-              Напишите мне
-            </h2>
-            <div class="form__input-wrap">
-              <div class="form__name-wrap">
-                <label class="label">Имя
-                  <input type="text" name="name" value="Как к Вам обращаться" class="input">
+        <div class="content__wrap clearfix">
+          <nav class="menu menu--close">
+            <ul>
+              <li class="menu__item"><a href="index.html" class="menu__item-link">Обо мне</a></li>
+              <li class="menu__item"><a href="#" class="menu__item-link">Мои работы</a></li>
+              <li class="menu__item"><a href="#" class="menu__item-link menu__item-link--active">Связаться со мной</a></li>
+            </ul>
+          </nav>
+          <div class="container container--form">
+            <form class="form">
+              <h2 class="form__title">
+                У вас есть интересный проект?
+                Напишите мне
+              </h2>
+              <div class="form__input-wrap">
+                <div class="form__name-wrap">
+                  <label class="label">Имя
+                    <input type="text" name="name" value="Как к Вам обращаться" class="input">
+                  </label>
+                  <label class="label">Email
+                    <input type="text" name="email" value="Куда мне писать" class="input">
+                  </label>
+                </div>
+                <label class="label">Сообщение
+                  <textarea>Кратко, в чем суть</textarea>
                 </label>
-                <label class="label">Email
-                  <input type="text" name="email" value="Куда мне писать" class="input">
-                </label>
+                <h3 class="capcha__title">Введите код, указанный на картинке</h3>
+                <div class="capcha__wrap">
+                  <div class="capcha__img"><img src="app/img/capcha.png" alt="capcha"></div>
+                  <input type="text" class="input input--capcha">
+                </div>
+                <div class="button__wrap">
+                  <input type="submit" class="button button--submit">
+                  <input type="reset" class="button button--reset">
+                </div>
               </div>
-              <label class="label">Сообщение
-                <textarea>Кратко, в чем суть</textarea>
-              </label>
-              <h3 class="capcha__title">Введите код, указанный на картинке</h3>
-              <div class="capcha__wrap">
-                <div class="capcha__img"><img src="app/img/capcha.png" alt="capcha"></div>
-                <input type="text" class="input input--capcha">
-              </div>
-              <div class="button__wrap">
-                <input type="submit" class="button button--submit">
-                <input type="reset" class="button button--reset">
-              </div>
-            </div>
-          </form>
+            </form>
+          </div>
+          <section class="contacts">
+            <ul class="contacts__list">
+              <li class="contacts__item contacts__item--dark">
+                <div class="contacts__item-wrap"><i class="sprite sprite-mail"></i><a href="mailto:korney197823@gmail.com" class="contacts__mail">korney197823@gmail.com</a></div>
+              </li>
+              <li class="contacts__item contacts__item--middle">
+                <div class="contacts__item-wrap"><i class="sprite sprite-phone"></i><a href="tel:+78125556666" class="contacts__phone">+79883337098</a></div>
+              </li>
+              <li class="contacts__item contacts__item--light">
+                <div class="contacts__item-wrap"><i class="sprite sprite-skype"></i><a href="skype:korney1978?chat" class="contacts__skype">korney197823</a></div>
+              </li>
+            </ul>
+          </section>
         </div>
-        <section class="contacts">
-          <ul class="contacts__list">
-            <li class="contacts__item contacts__item--dark">
-              <div class="contacts__item-wrap"><i class="sprite sprite-mail"></i><a href="mailto:korney197823@gmail.com" class="contacts__mail">korney197823@gmail.com</a></div>
-            </li>
-            <li class="contacts__item contacts__item--middle">
-              <div class="contacts__item-wrap"><i class="sprite sprite-phone"></i><a href="tel:+78125556666" class="contacts__phone">+79883337098</a></div>
-            </li>
-            <li class="contacts__item contacts__item--light">
-              <div class="contacts__item-wrap"><i class="sprite sprite-skype"></i><a href="skype:korney1978?chat" class="contacts__skype">korney197823</a></div>
-            </li>
-          </ul>
-        </section>
       </div>
       <footer class="footer">
         <p>&#169; 2015 Это мой сайт пожалуйста, не копируйте и не воруйте его</p>

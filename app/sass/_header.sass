@@ -6,6 +6,11 @@
   @media ($tablet-width)
     padding-top: 37px
     padding-bottom: 37px
+    padding-left: 35px
+    padding-right: 35px
+  @media ($desktop-width)
+    padding-left: 0
+    padding-right: 0
   &::after
     position: absolute
     content: ''
@@ -15,7 +20,10 @@
     background-image: linear-gradient(to right, rgba(28, 102, 122, 0.9) 0%, rgba(246, 250, 254, 0.9) 0%, rgba(216, 216, 216, 0.9) 0%, rgba(242, 246, 250, 0.9) 0%, rgba(28, 102, 122, 0.9) 48%, rgba(242, 246, 250, 0.9) 100%)
     bottom: 0
     left: 0
-
+.header__wrap
+  @media ($desktop-width)
+    width: 1200px
+    margin: 0 auto
 .logo
   width: 170px
   float: left

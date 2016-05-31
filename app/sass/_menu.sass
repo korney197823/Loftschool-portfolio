@@ -9,10 +9,17 @@
   transform: translateY(50%)
   background-position: -10px -62px
   cursor: pointer
+  @media ($desktop-width)
+    display: none
 .menu
   position: relative
   &--close
     display: none
+    @media ($desktop-width)
+      display: block
+  @media ($desktop-width)
+    float: left
+    width: 250px
 
 .menu ul
   position: absolute
@@ -21,6 +28,8 @@
   width: 100%
   background-color: #eff3f7
   box-shadow: 0 4px 8.7px 0.3px rgba(88, 105, 122, 0.59)
+  @media ($desktop-width)
+    position: static
 
 .menu__item
   text-align: center

@@ -42,6 +42,19 @@ body
   @media ($tablet-width)
     padding-left: 35px
     padding-right: 33px
+  @media ($desktop-width)
+    padding: 0
+
+.content__wrap
+  @media ($desktop-width)
+    width: 960px
+    margin: 0 auto
+    margin-top: 40px
+main
+  @media ($desktop-width)
+    width: 650px
+    float: right
+
 
 h2
   margin-top: 0
@@ -68,6 +81,8 @@ a
   @media ($tablet-width)
     margin-right: 25px
     margin-left: 60px
+  @media ($desktop-width)
+   //margin-left: 30px
   &--last
     @media ($tablet-width)
       margin-right: 32px

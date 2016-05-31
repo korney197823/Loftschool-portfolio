@@ -33,6 +33,20 @@ body {
     .container {
       padding-left: 35px;
       padding-right: 33px; } }
+  @media (min-width: 1400px) {
+    .container {
+      padding: 0; } }
+
+@media (min-width: 1400px) {
+  .content__wrap {
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 40px; } }
+
+@media (min-width: 1400px) {
+  main {
+    width: 650px;
+    float: right; } }
 
 h2 {
   margin-top: 0;
@@ -116,10 +130,18 @@ a {
   @media (min-width: 768px) {
     .contacts {
       margin-bottom: 30px; } }
+  @media (min-width: 1400px) {
+    .contacts {
+      float: left;
+      width: 250px; } }
 
 @media (min-width: 768px) {
   .contacts__list {
     display: flex; } }
+
+@media (min-width: 1400px) {
+  .contacts__list {
+    flex-direction: column; } }
 
 .contacts__item-wrap {
   width: 230px;
@@ -140,6 +162,9 @@ a {
   @media (min-width: 768px) {
     .contacts__item {
       width: 33.333333333%; } }
+  @media (min-width: 1400px) {
+    .contacts__item {
+      width: 100%; } }
   .contacts__item--dark {
     background-color: #27a1ba; }
   .contacts__item--middle {
@@ -183,6 +208,10 @@ a {
 
 @media (min-width: 768px) {
   .education__description-text {
+    text-align: left; } }
+
+@media (min-width: 768px) {
+  .education__description-bold {
     text-align: left; } }
 
 .experience {
@@ -267,11 +296,19 @@ a {
   .footer p {
     margin: 0; }
 
+@media (min-width: 1400px) {
+  .container--form {
+    float: right;
+    width: 650px; } }
+
 .form {
   background-color: #eff3f7;
   margin-top: 15px;
   padding-bottom: 40px;
   margin-bottom: 22px; }
+  @media (min-width: 1400px) {
+    .form {
+      margin-top: 0; } }
 
 .form__title {
   margin-bottom: 0;
@@ -372,7 +409,8 @@ textarea {
   border-radius: 3px;
   color: #ffffff;
   font-size: 16px;
-  font-family: FiraSansBook, sans-serif; }
+  font-family: FiraSansBook, sans-serif;
+  cursor: pointer; }
   .button--submit {
     background-color: #48cbe8; }
   .button--reset {
@@ -389,7 +427,13 @@ textarea {
   @media (min-width: 768px) {
     .header {
       padding-top: 37px;
-      padding-bottom: 37px; } }
+      padding-bottom: 37px;
+      padding-left: 35px;
+      padding-right: 35px; } }
+  @media (min-width: 1400px) {
+    .header {
+      padding-left: 0;
+      padding-right: 0; } }
   .header::after {
     position: absolute;
     content: '';
@@ -399,6 +443,11 @@ textarea {
     background-image: linear-gradient(to right, rgba(28, 102, 122, 0.9) 0%, rgba(246, 250, 254, 0.9) 0%, rgba(216, 216, 216, 0.9) 0%, rgba(242, 246, 250, 0.9) 0%, rgba(28, 102, 122, 0.9) 48%, rgba(242, 246, 250, 0.9) 100%);
     bottom: 0;
     left: 0; }
+
+@media (min-width: 1400px) {
+  .header__wrap {
+    width: 1200px;
+    margin: 0 auto; } }
 
 .logo {
   width: 170px;
@@ -412,12 +461,19 @@ textarea {
     .info {
       margin: 0 auto;
       margin-top: 35px; } }
+  @media (min-width: 1400px) {
+    .info {
+      margin-top: 0; } }
 
 @media (min-width: 768px) {
   .info__wrapper {
     margin: 0 auto;
     width: 700px;
     padding-bottom: 50px; } }
+
+@media (min-width: 1400px) {
+  .info__wrapper {
+    width: 650px; } }
 
 @media (min-width: 768px) {
   .info__title {
@@ -434,6 +490,9 @@ textarea {
       margin-right: 30px;
       width: 200px;
       float: left; } }
+  @media (min-width: 1400px) {
+    .info__photo {
+      width: 150px; } }
 
 .info__photo-img {
   width: 100%;
@@ -502,11 +561,21 @@ textarea {
   transform: translateY(50%);
   background-position: -10px -62px;
   cursor: pointer; }
+  @media (min-width: 1400px) {
+    .menu__toggle {
+      display: none; } }
 
 .menu {
   position: relative; }
   .menu--close {
     display: none; }
+    @media (min-width: 1400px) {
+      .menu--close {
+        display: block; } }
+  @media (min-width: 1400px) {
+    .menu {
+      float: left;
+      width: 250px; } }
 
 .menu ul {
   position: absolute;
@@ -515,6 +584,9 @@ textarea {
   width: 100%;
   background-color: #eff3f7;
   box-shadow: 0 4px 8.7px 0.3px rgba(88, 105, 122, 0.59); }
+  @media (min-width: 1400px) {
+    .menu ul {
+      position: static; } }
 
 .menu__item {
   text-align: center; }
