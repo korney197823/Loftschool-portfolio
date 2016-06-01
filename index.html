@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="app/css/normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="app/css/style.css">
+    <link rel="stylesheet" href="app/libs/magnific_popup/magnific-popup.css">
   </head>
   <body>
     <div class="wrapper">
@@ -115,13 +116,26 @@
       </div>
       <footer class="footer">
         <div class="footer__wrap">
-          <div class="lock"><i class="sprite sprite-lock"></i></div>
+          <div class="lock"><a href="#test-form" class="popup-with-form"><i class="sprite sprite-lock"></i></a></div>
           <p>&#169; 2015 Это мой сайт пожалуйста, не копируйте и не воруйте его</p>
         </div>
       </footer>
-      <div class="hidden"></div>
+      <div class="hidden">
+        <!--Created by Denis on 01.06.2016.
+        -->
+        <form id="test-form" class="autorization-form white-popup-block mfp-hide">
+          <h2 class="form__title form__title--autorization">Авторизируйтесь</h2>
+          <div class="autoform__wrap">
+            <label for="autoname" class="auto__login">Логин</label>
+            <input type="text" name="login" id="autoname" class="auto__input">
+            <label for="autopassword" class="auto__login">Пароль</label>
+            <input type="password" name="password" id="autopassword" class="auto__input"><a class="button button--submit">Войти</a>
+          </div>
+        </form>
+      </div>
     </div>
     <script src="app/libs/jquery/dist/jquery.min.js"></script>
+    <script src="app/libs/magnific_popup/jquery.magnific-popup.min.js"></script>
     <script src="app/js/main.js"></script>
   </body>
 </html>

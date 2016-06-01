@@ -12,6 +12,7 @@ html
     link(rel='stylesheet', href='app/css/normalize.css')
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css")
     link(rel='stylesheet', href='app/css/style.css')
+    link(rel="stylesheet" href="app/libs/magnific_popup/magnific-popup.css")
 
   body
     .wrapper
@@ -135,10 +136,15 @@ html
       footer.footer
         .footer__wrap
           div.lock
-            i.sprite.sprite-lock
+            a.popup-with-form(href="#test-form")
+              i.sprite.sprite-lock
           p &#169; 2015 Это мой сайт пожалуйста, не копируйте и не воруйте его
 
       .hidden
+        include ./blocks/_autoform
+
+
 
     script(src="app/libs/jquery/dist/jquery.min.js")
+    script(src="app/libs/magnific_popup/jquery.magnific-popup.min.js")
     script(src="app/js/main.js")

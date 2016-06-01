@@ -13,6 +13,57 @@
   @media ($desktop-width)
     margin-top: 0
 
+.autorization-form
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  width: 298px
+  background-color: #eff3f7
+  border-radius: 3px
+  box-shadow: 0 4px 6.9px 0.1px rgba(13, 16, 7, 0.29)
+
+  a
+    display: block
+    text-align: center
+    margin: 0 auto
+    margin-top: 20px
+    font-size: 21px
+    @media ($tablet-width)
+      font-size: 36px
+      width: 230px
+  @media ($tablet-width)
+    width: 509px
+
+.autoform__wrap
+  width: 250px
+  margin: 0 auto
+  margin-bottom: 25px
+  @media ($tablet-width)
+    width: 428px
+    margin-bottom: 45px
+
+.auto__login
+  display: block
+  text-align: center
+  font-family: FiraSansLight, sans-serif
+  font-size: 21px
+  @media ($tablet-width)
+    font-size: 36px
+    margin-top: 20px
+
+.auto__input
+  width: 100%
+  padding: 8px
+  background-color: #fbfcfd
+  border: 1px solid #3ba8c0
+  border-radius: 3px
+  outline: none
+  font-size: 13px
+  color: #3ba8c0
+  @media ($tablet-width)
+    min-height: 60px
+
 .form__title
   margin-bottom: 0
   padding: 30px 6px 40px
@@ -26,6 +77,12 @@
     font-size: 27px
     padding-top: 45px
     padding-bottom: 45px
+  &--autorization
+    font-size: 24px
+    padding-top: 15px
+    padding-bottom: 25px
+    @media ($tablet-width)
+      font-size: 40px
 
 
 .form__input-wrap
@@ -58,8 +115,6 @@ textarea
   font-size: 13px
   color: #3ba8c0
 
-input[name="name"],
-input[name="email"]
 
 
 textarea
@@ -104,7 +159,6 @@ textarea
 
 .button
   width: 104px
-  height: 31px
   border: none
   border-radius: 3px
   color: #ffffff
@@ -117,4 +171,3 @@ textarea
     background-color: #849db5
   @media ($tablet-width)
     width: 140px
-    height: 34px
